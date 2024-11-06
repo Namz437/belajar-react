@@ -1,0 +1,156 @@
+/* TodoList.module.css */
+
+/* Menyusun todoList di tengah layar dan mengisi seluruh layar */
+.todoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; /* Lebar 100% dari viewport */
+  height: 100vh; /* Tinggi 100% dari viewport */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  overflow: hidden; /* Menghindari scroll horizontal */
+}
+
+/* Styling untuk judul */
+.todoList h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Kontainer untuk input dan tombol */
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk input text */
+.inputContainer input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px; /* Lebar input lebih besar */
+  font-family: "Arial", sans-serif;
+}
+
+/* Styling untuk tombol */
+.inputContainer button,
+.todoItem button {
+  padding: 10px 20px; /* Menambahkan padding kiri-kanan agar tombol lebih besar */
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle; /* Mengatur agar tombol tidak turun ke bawah */
+  transition: background-color 0.3s;
+}
+
+/* Tombol khusus */
+.addButton {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #45a049;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+  border: 1px solid #388e3c;
+}
+
+.updateButton {
+  background-color: #ffa500;
+  color: white;
+}
+
+.updateButton:hover {
+  background-color: #e68900;
+}
+
+.editButton {
+  background-color: #2196f3;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #1976d2;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #e53935;
+}
+
+.completeButton {
+  background-color: #8bc34a;
+  color: white;
+}
+
+.completeButton:hover {
+  background-color: #7cb342;
+}
+
+/* Styling untuk daftar todo */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px; /* Batas lebar daftar todo */
+  margin-bottom: 20px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Pastikan item menyesuaikan lebar kontainer */
+  color: #333; /* Menambahkan warna teks hitam */
+}
+
+/* Jika ingin lebih spesifik, dapat menambahkan ke elemen teks tertentu seperti span atau p */
+.todoItem span {
+  color: #333; /* Pastikan teks di dalam item juga berwarna hitam */
+}
+
+/* Styling untuk tombol Next */
+.nextButton {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
+.nextButton:hover {
+  background-color: #004781;
+}
+
+/* Efek hover untuk tombol */
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,19 @@
+/* src/styles/Completed.module.css */
+
+.completedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Mengatur tinggi kontainer agar mengisi penuh layar */
+    width: 100vw; /* Mengatur lebar kontainer agar mengisi penuh layar */
+    background-color: #f4f6f9; /* Latar belakang terang */
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Pastikan tidak ada margin yang mengganggu */
+    box-sizing: border-box; /* Menghitung padding ke dalam ukuran elemen */
+  }
+  
+
+  
+  
